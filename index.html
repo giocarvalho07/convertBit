@@ -10,7 +10,7 @@
 
     <header>
         <nav>
-           <div class="cabecalho" >
+           <div class="cabecalho">
                 <h1>
                     Convert.bit
                 </h1>
@@ -32,69 +32,56 @@
     </section>
 
     <main id="section_conversao">
-            <div class="card_valor_conversao">
-                <h2>
-                    Escolha o valor da conversão
-                </h2>
 
-                <input type="number" value="">
-                <button type="submit">
-                    Converter
-                </button>
+        <h2 class="titulo_conversao">
+            Realize sua conversão
+        </h2>
+
+        <form id="form">
+            <div class="form-group">
+                <label for="age">Selecione o valor da conversão</label>
+                <input type="number" id="age" />
+              </div>
+
+            <div class="form-group">
+              <label for="gender">Selecione a unidade para conversão</label>
+              <select id="gender">
+                <option value="male">Mb</option>
+                <option value="female">Kb</option>
+              </select>
             </div>
-
-            <div class="card_unidade_conversao">
-                <h2>
-                    Escolha a unidade da conversão
-                </h2>
-
-                <div>
-                    <select name="" id="">
-                        <option value="mb">mb</option>
-                        <option value="kb">kb</option>
-                    </select>
-                    <button type="submit">
-                        Converter
-                    </button>
-                </div>
+            
+            <div class="form-group">
+              <label for="gender">Selecione a unidade a ser convertida</label>
+              <select id="gender">
+                <option value="male">Mb</option>
+                <option value="female">Kb</option>
+              </select>
             </div>
-
-            <div class="card_unidade_convertido">
-                <h2>
-                    Escolha a unidade a ser convertida
-                </h2>
-
-                <div>
-                    <select name="" id="">
-                        <option value="mb">mb</option>
-                        <option value="kb">kb</option>
-                    </select>
-                    <button type="submit">
-                        Converter
-                    </button>
-                </div>
+    
+            <div class="form-group">
+              <button type="submit">Calcular</button>
             </div>
+        </form>
+
     </main>
 
 
     <section class="section_conversao_realizada" >
-        <div class="card_parabens" >
-            <hr>
+        <div class="card_parabens">
+    
             <h2 class="parabens">
                 Parabéns, conversão realizada com sucesso 
             </h2>
         </div>
 
-        <div>
-            <div>
-                <h2>
+        <div class="card_conversao_realizada">
+                <h2 class="conversao_realizada">
                     80
                 </h2>
-                <h2>
+                <h2 class="conversao_realizada">
                     mb
                 </h2>
-            </div>
-            <hr>
         </div>
     </section>
 
@@ -112,14 +99,14 @@
             </div>
 
             <div class="div_propaganda_informacao">
-                <h4>
+                <h4 class="titulo_informacao" >
                     Convert.Bit
                 </h4>
-                <p>
+                <p class="paragrafo_informacao">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam, alias! Earum ducimus minima est accusantium quam doloremque nihil reprehenderit magni quasi expedita alias animi similique ipsam officiis, distinctio temporibus placeat?
                 </p>
 
-                <button>
+                <button class="button_informacao">
                     Saiba Mais
                 </button>
             </div>
