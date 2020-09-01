@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script defer src="script.js"></script>
     <title>Convert.bit</title>
 </head>
 <body>
@@ -37,33 +38,36 @@
             Realize sua conversão
         </h2>
 
-        <form id="form">
-            <div class="form-group">
-                <label for="age">Selecione o valor da conversão</label>
-                <input type="number" id="age" />
-              </div>
+        <div id="form">
 
             <div class="form-group">
-              <label for="gender">Selecione a unidade para conversão</label>
-              <select id="gender">
-                <option value="male">Mb</option>
-                <option value="female">Kb</option>
-              </select>
+                <label>Selecione o valor da conversão</label>
+                <input type="number" id="valor" />
             </div>
+
+            <div class="form-group">
+                <label>Selecione a unidade para conversão</label>
+                <select id="selectDe">
+                <option value="Mb">Mb</option>
+                <option value="Kb">Kb</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label >Selecione a unidade a ser convertida</label>
+                <select id="selectPara">
+                <option value="Mb">Mb</option>
+                <option value="Kb">Kb</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <button onclick="calcular()">Calcular</button>
+            </div>
+
+
+        </div>
             
-            <div class="form-group">
-              <label for="gender">Selecione a unidade a ser convertida</label>
-              <select id="gender">
-                <option value="male">Mb</option>
-                <option value="female">Kb</option>
-              </select>
-            </div>
-    
-            <div class="form-group">
-              <button type="submit">Calcular</button>
-            </div>
-        </form>
-
     </main>
 
 
@@ -71,17 +75,12 @@
         <div class="card_parabens">
     
             <h2 class="parabens">
-                Parabéns, conversão realizada com sucesso 
+                Calculando seu resultado ...
             </h2>
         </div>
 
-        <div class="card_conversao_realizada">
-                <h2 class="conversao_realizada">
-                    80
-                </h2>
-                <h2 class="conversao_realizada">
-                    mb
-                </h2>
+        <div class="card_conversao_realizada" id="resultado">
+                
         </div>
     </section>
 
