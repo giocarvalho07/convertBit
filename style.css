@@ -253,6 +253,14 @@ button:hover{
     width: 80%;
     height: 100px;
     display: flex;
+    color: #9B20E7;
+    font-weight: bolder;
+    font-size: 28px;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;;
 }
 
 .button_informacao{
